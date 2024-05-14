@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42847a8399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images\myLogo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#home">HOME</a></li>
+                    <li> <a href="#about">ABOUT</a></li>
+                    <li> <a href="#services">SERVICES</a></li>
+                    <li> <a href="#portfolio">PORTFOLIO</a></li>
+                    <li> <a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p> A MERN Stack Developer</p>
+                <h1>Hi, I'm <span>Prajesh <br> Banerjee</span>  from <br> Uttarpara <br> West Bengal.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- 'ABOUT' SECTION -->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\Screenshot_20240124_104402_Drive.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>Hi, This is Prajesh Banerjee a Full Stack Developer. I am a passionate and skilled web developer with a strong background in front-end and back-end development. I have a keen eye for creating user-friendly, responsive websites that engage and captivate audiences. With a solid foundation in HTML, CSS, JavaScript, and various web development frameworks, I am constantly expanding my knowledge and staying up-to-date on the latest industry trends. My goal is to create innovative and impactful digital experiences that leave a lasting impression. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" data-tab="skills" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" data-tab="education" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Development</span> <br>By using HTML, CSS, Tailwind CSS, React JS</li>
+                            <li><span>Back End Development</span> <br>By using Javascript, NODE JS, React JS</li>
+                            <li><span>Database</span><br> Knowledge in MONGODB</li>
+                            <li><span>Microsoft Office Tools</span> <br> Expert in MS Word, Excel, Access, Powerpoint </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education" >
+                        <ul>
+                            <li><span>2024</span> <br> MERN Stack Developer from Vidyastu </li>
+                            <li><span>2018</span> <br> Bachelor of Science Honours in Environmental Science from Asutosh College (University of Calcutta)</li>
+                            <li><span>2014</span> <br> Higher Secondary from West Bengal Council of Higher Secondary Education </li>
+                            <li><span>2013</span> <br> Certificate in Information Technology & Application from Youth Computer Training Centre </li>
+                            <li><span>2012</span> <br> Madhyamik Examination from West Bengal Board of Secondary Education </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY SPECIALIZATION</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I can do Front End Development by using React Js and Tailwind CSS</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Development</h2>
+                    <p>I also can do Back End Development by using NODE Js</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other sections like Portfolio and Contact -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+        <!-- portfolio section -->
+
+        <div id="portfolio">
+
+            <div class="container">
+                <h1 class="sub-title">MY WORK </h1>
+
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="images\work-3.1.png" alt="">
+
+                        <div class="layer">
+                            <p>clone of sisyphus website using HTML & custom CSS</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images\work-3.2.png" alt="">
+
+                        <div class="layer">
+                            
+                            <p>Random Joke Generator using Javascript and DOM</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="work">
+                        <img src="images\work-3.3.png" alt="">
+
+                        <div class="layer">
+                            <p>creating a e-commerce website frontend using Tailwind CSS</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="work">
+                        <img src="images\work-3.4.png" alt="">
+
+                        <div class="layer">
+                            <p>creating a multipage e-commerce website using React & Tailwind CSS</p>
+                            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <a href="#" class="btn">See More</a>
+
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="contact-left">
+
+                        <h1 class="sub-title">Contact Me</h1>
+
+                        <p><i class="fa-solid fa-paper-plane"></i>prajeshbanerjee2@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7478162085</p>
+
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/prajesh.banerjee.9"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="RESUME_PB.pdf" download class="btn btn2" >Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form action="https://script.google.com/macros/s/AKfycbwYaHhwF3OJoBAPLFwDY8JspnKBQDXDQgDgEhv83YnzdXn6Q0ExMz5yeOq_AsDmcha8/exec" name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="email" placeholder="your@domain.com" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © Prajesh</p>
+            </div>
+
+        </div>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwHTVDGrdOMkqTs_e5SXWhuTCak8HTVp4alTy0UB4mE6YpbscpZzAll59MS-UuKVDow/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        if (response.ok) {
+                            msg.innerHTML = "Message sent successfully";
+                            setTimeout(function() {
+                                msg.innerHTML = "";
+                            }, 5000);
+                            form.reset(); // Move this inside the 'then' block
+                        } else {
+                            throw new Error('Network response was not ok');
+                        }
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+        
+</body>
+</html>
